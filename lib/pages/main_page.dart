@@ -39,6 +39,7 @@ class MainPageState extends State<MainPage> {
                   children: <Widget>[
                     HeaderInfo(
                       isMain: true,
+                      sectionTitle: "",
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -168,7 +169,7 @@ class BottomButton extends StatelessWidget {
   final bool isTapped;
   final bool isPlus;
 
-  BottomButton({this.imgPath, this.index, this.isTapped, this.isPlus});
+  BottomButton({required this.imgPath, required this.index, required this.isTapped, required this.isPlus});
   @override
   Widget build(BuildContext context) {
     return Material(

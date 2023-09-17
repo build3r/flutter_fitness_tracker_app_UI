@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class HeaderInfo extends StatelessWidget {
-  final bool isMain;
-  final String sectionTitle;
+  bool isMain = true;
+  String sectionTitle = "";
 
-  HeaderInfo({this.isMain, this.sectionTitle});
+    HeaderInfo({required this.isMain, required this.sectionTitle});
 
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
-    String month;
+    String  month = 'Jan';
 
     switch (now.month.toInt()) {
       case 1:

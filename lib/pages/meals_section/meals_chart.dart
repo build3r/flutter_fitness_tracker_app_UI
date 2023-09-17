@@ -9,7 +9,7 @@ class MyPainter extends CustomPainter {
   double width;
   double startAngle;
   MyPainter(
-      {this.lineColor, this.completeColor, this.completePercent, this.width, this.startAngle});
+      {required this.lineColor, required this.completeColor, required this.completePercent, required this.width, required this.startAngle});
   @override
   void paint(Canvas canvas, Size size) {
     Paint line = new Paint()

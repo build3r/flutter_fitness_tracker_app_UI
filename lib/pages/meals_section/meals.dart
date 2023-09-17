@@ -25,7 +25,6 @@ class _MealsPageState extends State<MealsPage> {
             ),
           ),
           Stack(
-            overflow: Overflow.visible,
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
@@ -201,7 +200,7 @@ class MealsHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
-    String month;
+    String month = 'Jan';
 
     switch (now.month.toInt()) {
       case 1:

@@ -47,7 +47,7 @@ class WaterSection extends StatelessWidget {
         Container(
           width: (MediaQuery.of(context).size.width - 30.0) / 2.0,
           child: Stack(
-            overflow: Overflow.visible,
+
             children: [
               ClipPath(
                 clipper: WaterClipPathBack(),

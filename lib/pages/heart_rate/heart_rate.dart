@@ -89,7 +89,6 @@ class _HeartRatePageState extends State<HeartRatePage> {
               Container(
                 height: 85 + (MediaQuery.of(context).size.height * 0.45),
                 child: Stack(
-                  overflow: Overflow.visible,
                   children: <Widget>[
                     Container(
                       width: MediaQuery.of(context).size.width,
@@ -530,7 +529,7 @@ class HeartRateHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
-    String month;
+    String month  = 'Jan';
 
     switch (now.month.toInt()) {
       case 1:

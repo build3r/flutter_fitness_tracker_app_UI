@@ -5,7 +5,7 @@ class MealsCard extends StatelessWidget {
 
   final int mealIndex;
 
-  MealsCard({this.mealIndex});
+  MealsCard({required this.mealIndex});
 
   Widget _dailyMeals(String title) {
     return Row(

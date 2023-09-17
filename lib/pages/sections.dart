@@ -4,7 +4,7 @@ class Sections extends StatelessWidget {
   final Widget child;
   final double widthFull;
 
-  Sections({this.child, this.widthFull});
+  Sections({required this.child, required this.widthFull});
 
   @override
   Widget build(BuildContext context) {

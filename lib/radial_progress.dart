@@ -13,13 +13,13 @@ class RadialProgressbar extends StatefulWidget {
 
   RadialProgressbar({
     this.trackWidth = 4.0,
-    this.trackColor,
+    required this.trackColor,
     this.progressWidth = 16.0,
     this.progressColor = Colors.black,
     this.progressPercent = 0.0,
     this.outerPadding = const EdgeInsets.all(0.0),
     this.innerPadding = const EdgeInsets.all(0.0),
-    this.child,
+    required this.child,
   });
 
   @override
@@ -66,11 +66,11 @@ class RadialSeekBarPainter extends CustomPainter {
   final double progressPercent;
 
   RadialSeekBarPainter({
-    @required this.trackWidth,
-    @required trackColor,
-    @required this.progressWidth,
-    @required progressColor,
-    @required this.progressPercent,
+    required this.trackWidth,
+    required trackColor,
+    required this.progressWidth,
+    required progressColor,
+    required this.progressPercent,
   })  : trackPaint = new Paint()
           ..color = trackColor
           ..style = PaintingStyle.stroke
